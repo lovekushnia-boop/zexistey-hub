@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>ZEXISTEY Hub | Select</title>
+<style>
+body{background:#000;color:#0f0;font-family:Courier New;}
+.box{width:90%;margin:30px auto;border:2px solid #0f0;padding:20px;}
+input,select{
+width:100%;
+padding:8px;
+margin:8px 0;
+background:#000;
+color:#0f0;
+border:1px solid #0f0;
+}
+button{
+padding:10px;
+background:#0f0;
+border:none;
+cursor:pointer;
+}
+</style>
+</head>
+<body>
+
+<div class="box">
+<h3>BOT SELECTION</h3>
+<select>
+<option>Bot Alpha</option>
+<option>Bot Ghost</option>
+<option>Bot Shadow</option>
+</select>
+
+<h3>COUNTRY</h3>
+<select>
+<option>India</option>
+<option>Pakistan</option>
+<option>Bangladesh</option>
+<option>Brazil</option>
+<option>Indonesia</option>
+</select>
+
+<h3>GUILD UID</h3>
+<input type="text" maxlength="15" oninput="this.value=this.value.replace(/[^0-9]/g,'')">
+
+<h3>DEVICE</h3>
+<select>
+<option>Redmi Note</option>
+<option>Samsung Galaxy</option>
+<option>iPhone</option>
+<option>Realme</option>
+</select>
+
+<br><br>
+<button onclick="next()">START</button>
+</div>
+
+<script>
+function next(){
+window.location="terminal.html";
+}
+</script>
+
+</body>
+</html>
